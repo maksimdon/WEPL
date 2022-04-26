@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.cont{
+    width: 85%;
+    margin: auto;
+    font-family: 'Roboto';
+}
+main{
+    background-color: #000c37;
+}
+.blank-create{
+    color: white;
+    margin-top: 82px;
+    margin-bottom: 82px;
+    font-size: 32px;
+}
+.nazva{
+    color: white;
+    font-size: 24px;
+}
+.select{
+    width: 420px;
+    height: 75px;
+    background: #001251;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 23px 35px 23px 35px;
+}

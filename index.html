@@ -17,15 +17,98 @@
     <main>
         <div class="cont">
             <h2 class="blank-create">Добавление анкеты игрока</h2>
-            <div class="game-region">
-                <form action="#">
+            <form action="#">
+                <div class="game">
                     <p class="nazva">Игра</p>
-                    <label for="">
-                        <input class="select" type="select">
-                        <input type="select">
-                    </label>
+                    <select class="select" name="game" id="">
+                        <option value="CS:GO">CS:GO</option>
+                        <option value="Desnity">Desnity</option>
+                        <option value="Dota 2">Dota 2</option>
+                        <option value="Valorant">Valorant</option>
+                        <option value="Overwatch">Overwatch</option>
+                    </select>
+                </div>
+                <div class="region">
+                    <p class="nazva">Регион</p>
+                    <select class="select" name="region" id="">
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="CIS">CIS</option>
+                        <option value="America">America</option>
+                    </select>
+                </div>
+            </form>
+            <div class="name">
+                <form action="#">
+                    <p class="nazva name-p">Ваше имя?</p>
+                    <input class="select" type="text">
                 </form>
             </div>
+            <div class="micro">
+                <p class="nazva micro-p">Имеется ли у вас микрофон?</p>
+                <label class="yesorno">Да</label>
+                <input class="micro-input" type="radio" name="micro">
+                <span class="radio"></span>
+                <label class="yesorno">Нет</label>
+                <input class="micro-input" type="radio" name="micro">
+                <span class="radio"></span>
+            </div>
+            <div class="age">
+                <p class="nazva">Сколько вам лет?</p>
+                <select class="select" name="age" id="">
+                    <option value="12-15">12-15 лет</option>
+                    <option value="16-20">16-20 лет</option>
+                    <option value="21+">21+ лет</option>
+                </select>
+            </div>
+            <div class="mate-count">
+                <p class="nazva micro-p">Какое количество тиммейтов вы ищете?</p>
+                <label class="yesorno">Пати</label>
+                <input class="micro-input" type="radio" name="micro">
+                <span class="radio"></span>
+                <label class="yesorno">Дуо</label>
+                <input class="micro-input" type="radio" name="micro">
+                <span class="radio"></span>
+            </div>
+            <div class="pol">
+                <p class="nazva micro-p">Ваш пол</p>
+                <label class="yesorno">Мужской</label>
+                <input class="micro-input" type="radio" name="micro">
+                <span class="radio"></span>
+                <label class="yesorno">Женский</label>
+                <input class="micro-input" type="radio" name="micro">
+                <span class="radio"></span> 
+            </div>
+            <div class="chanel">
+                <p class="nazva">Какое средство связи используете?</p>
+                <select class="select" name="chanel" id="">
+                    <option value="Discord">Discord</option>
+                    <option value="TeamSpeak">TeamSpeak</option>
+                    <option value="Telegram">Telegram</option>
+                    <option value="other">Другое/встроенный в игру канал</option>
+                </select>
+            </div>
+            <div class="aim">
+                <p class="nazva">Цель игры</p>
+                <select class="select" name="aim" id="">
+                    <option value="fun">Пофаниться</option>
+                    <option value="up">Трайхард</option>
+                    <option value="questes">Выполнение квестов</option>
+                </select>
+            </div>
+            <div class="skill">
+                <p class="nazva">Скилл в игре</p>
+                <select class="select" name="aim" id="">
+                    <option value="lows">Новичек</option>
+                    <option value="mid">Средний</option>
+                    <option value="high">Высокий</option>
+                </select>
+            </div>
+            <a href="#">
+                <div class="create-button">
+                    <p class="create">Создать анкету</p>
+                </div>
+            </a>
         </div>
     </main>
     <footer>

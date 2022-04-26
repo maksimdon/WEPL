@@ -10,16 +10,18 @@
 }
 main{
     background-color: #000c37;
+    padding-top: 76px;
+    padding-bottom: 113px;
 }
 .blank-create{
     color: white;
-    margin-top: 82px;
     margin-bottom: 82px;
     font-size: 32px;
 }
 .nazva{
     color: white;
     font-size: 24px;
+    margin-bottom: 18px;
 }
 .select{
     width: 420px;
@@ -30,4 +32,86 @@ main{
     color: white;
     font-size: 24px;
     padding: 23px 35px 23px 35px;
+}
+select{
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+}
+.game{
+    display: inline-block;
+}
+.region{
+    display: inline-block;
+    margin-left: 244px;
+}
+.name{
+    display: inline-block;
+}
+.name-p{
+    margin-top: 41px;
+}
+.micro-input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.radio{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #001251;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 110px;
+}
+.micro-input:checked + .radio{
+    border: #001251 solid 10px;
+    background-color: white;
+}
+.yesorno{
+    color: white;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.micro{
+    display: inline-block;
+    margin-left: 244px;
+}
+.micro-p{
+    margin-bottom: 36px;
+}
+.age{
+    margin-top: 38px;
+    display: inline-block;
+}
+.mate-count{
+    display: inline-block;
+    margin-left: 244px;
+}
+.pol{
+    margin-top: 51px;
+    display: inline-block;
+}
+.chanel{
+    margin-top: 51px;
+    display: inline-block;
+    margin-left: 194px;
+}
+.aim{
+    margin-top: 51px;
+}
+.skill{
+    margin-top: 51px;
+}
+.create{
+    color: white;
+    font-size: 24px;
+}
+.create-button{
+    padding: 23px 120px 23px 120px;
+    background-color: #CA8125;
+    max-width: 416px;
+    text-decoration: none;
+    margin-top: 100px;
 }

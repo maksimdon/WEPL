@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+body .hidden {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  display: none;
+}
+
+body .login-menu {
+  width: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100% !important;
+  background-color: rgba(0, 0, 0, 0.709);
+  position: fixed;
+  z-index: 999;
+}
+
+body .login-menu .registration-menu {
+  width: 600px;
+  border-radius: 25px;
+  background-color: white;
+  background-color: #000C37;
+  padding: 70px 0;
+}
+
+body .login-menu .registration-menu .registration-wrapper {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .login-menu .registration-menu .registration-wrapper h2 {
+  margin-bottom: 126px;
+  font-size: 64px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .registration-menu .registration-wrapper .switcher {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  background: none;
+  border: none;
+  opacity: 40%;
+}
+
+body .login-menu .registration-menu .registration-wrapper form {
+  width: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .login-menu .registration-menu .registration-wrapper form input {
+  border-radius: 25px;
+  padding: 23px;
+  width: 100%;
+  border: none;
+  background-color: #001251;
+  margin-bottom: 25px;
+  outline: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .registration-menu .registration-wrapper form input::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: 60%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .registration-menu .registration-wrapper form input:-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 60%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .registration-menu .registration-wrapper form input::-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 60%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .registration-menu .registration-wrapper form input::placeholder {
+  color: #FFFFFF;
+  opacity: 60%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .registration-menu .registration-wrapper form input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+body .login-menu .registration-menu .registration-wrapper form input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+body .login-menu .registration-menu .registration-wrapper form input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+body .login-menu .registration-menu .registration-wrapper form input:focus::placeholder {
+  opacity: 0;
+}
+
+body .login-menu .registration-menu .registration-wrapper form button {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #CA8125;
+  padding: 20px 20px;
+  border: none !important;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .registration-menu .registration-wrapper form button:hover {
+  background-color: #86551a;
+}
+
+body .login-menu .log-menu {
+  width: 600px;
+  border-radius: 25px;
+  background-color: white;
+  background-color: #000C37;
+  padding: 70px 0;
+}
+
+body .login-menu .log-menu .log-wrapper {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .login-menu .log-menu .log-wrapper h2 {
+  margin-bottom: 126px;
+  font-size: 64px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .log-menu .log-wrapper .switcher {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  background: none;
+  border: none;
+  opacity: 40%;
+}
+
+body .login-menu .log-menu .log-wrapper form {
+  width: 100%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .login-menu .log-menu .log-wrapper form input {
+  border-radius: 25px;
+  padding: 23px;
+  width: 100%;
+  border: none;
+  background-color: #001251;
+  margin-bottom: 25px;
+  outline: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .log-menu .log-wrapper form input::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 60%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .log-menu .log-wrapper form input:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 60%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .log-menu .log-wrapper form input::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 60%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .log-menu .log-wrapper form input::placeholder {
+  color: #ffffff;
+  opacity: 60%;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .log-menu .log-wrapper form input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+body .login-menu .log-menu .log-wrapper form input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+body .login-menu .log-menu .log-wrapper form input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+body .login-menu .log-menu .log-wrapper form input:focus::placeholder {
+  opacity: 0;
+}
+
+body .login-menu .log-menu .log-wrapper form button {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #CA8125;
+  padding: 20px 20px;
+  border: none !important;
+  border-radius: 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .login-menu .log-menu .log-wrapper form button:hover {
+  background-color: #86551a;
+}
+
+body header {
+  padding: 5px 0 25px;
+  height: 80px;
+  background-color: #001251;
+}
+
+body header a:hover, body header button:hover {
+  background-color: #86551a;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body header .logo {
+  height: 80%;
+}
+
+body header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header button {
+  padding: 9px 37px;
+  background-color: #CA8125;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-radius: 15px;
+}
+
+body header nav .default-button-first {
+  padding: 10px 57px;
+  margin-right: 58px;
+}
+
+body header nav .default-button-secound {
+  padding: 10px 35px;
+}
+
+body header nav a {
+  border-radius: 15px;
+  padding: 9px 37px;
+  background-color: #CA8125;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+  font-family: "Roboto", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

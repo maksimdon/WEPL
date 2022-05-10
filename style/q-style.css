@@ -37,8 +37,8 @@ header {
     color: #FFFFFF;
     background-color: #CA8125;
     border: none;
+    cursor: pointer;
 }
-
 h1 {
     font-family: 'Roboto';
     font-weight: 500;

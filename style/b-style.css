@@ -44,14 +44,12 @@ h1 {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
     color: #FFFFFF;
 }
 .name::after{
     content: '';
     display: block;
     width: calc(100%-18px);
-    margin-left: 18px;
     height: 1px;
     background-color: black;
     margin-top: 8px;
@@ -59,8 +57,7 @@ h1 {
 .text {
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28.13px;  
+    font-size: 24px; 
     color: #FFFFFF;
 }
 .description {
@@ -69,4 +66,40 @@ h1 {
     padding-bottom: 68px;
     padding-left: 17px;
     border-left: 1px solid black;
+}
+@media(max-width: 760px){
+    .description {
+        margin-left: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    #texts {
+        font-size: 16px;
+    }
+    .flex-grow {
+        margin-left: 15px;
+    }
+    .blank img {
+        width: 100px;
+    }
+    .container {
+        max-width: 95%;
+        margin: auto;
+    }
+}
+@media(max-width: 400px){
+    .flex-grow {
+        margin-left: 10px
+    }
+    .blank img {
+        width: 80px;
+        margin-top: calc(50%-100px);
+    }
+    .blank{ 
+        padding: 5px 0 0 5px;
+    }
+    #texts{
+        font-size: 14px
+    }
 }

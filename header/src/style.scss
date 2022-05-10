@@ -1,3 +1,4 @@
+
 $roboto-font: 'Roboto', sans-serif;
 
 
@@ -27,10 +28,66 @@ $roboto-font: 'Roboto', sans-serif;
 }
 
 
-
 body{
     .hidden{
         width: 0; height: 0; visibility: hidden; display: none;
+    }
+    .burger-menu{
+        margin-top: 75px;
+        background-color: #001251;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        border-top: none!important;
+        -webkit-transition:max-height 0.4s linear;
+        -moz-transition:max-height 0.4s linear;
+        transition:max-height 0.4s linear;
+        max-height: 0px;
+
+        .default-button-secound{
+            margin: 20px 0;
+        }
+        @include flex-parameter(center, column, center);
+        right: 0;
+        
+        a{
+            -webkit-transition:max-height 0.4s linear;
+            -moz-transition:max-height 0.4s linear;
+            transition:max-height 0.4s linear;
+            max-height: 0px;
+            width: 300px;
+            text-align: center;
+            border-radius: 15px;
+            padding: 9px 0;
+            // background-color: #CA8125;
+            background-color: transparent;
+            color: transparent;
+                // width: 254px;
+            @include font-parameter(24px, 500, transparent, none, none, $roboto-font); 
+            @media (max-width: 1000px){
+                font-size: 20px;
+            }
+            
+        }
+        .login{
+            -webkit-transition:max-height 0.4s linear;
+            -moz-transition:max-height 0.4s linear;
+            transition:max-height 0.4s linear;
+            max-height: 0px;
+            color: transparent;
+            padding: 9px 37px;
+            // background-color: #CA8125;
+            background-color: transparent;
+            @include font-parameter(24px, 500, transparent, none, none, $roboto-font); 
+            border: none;
+            border-radius: 15px;
+            width: 300px;
+            text-align: center;
+            @media (max-width: 1000px){
+                font-size: 20px;
+            }
+            
+        }
     }
     .login-menu{
         width: 100%!important;
@@ -93,6 +150,9 @@ body{
                             background-color: #86551a;
                         }
                         @include font-parameter(24px, 500, #FFFFFF, none, none, $roboto-font);
+                        @media (max-width: 1000px){
+                            font-size: auto;
+                        }
 
                     }
                 }
@@ -190,32 +250,55 @@ body{
         .container{
             @include flex-parameter(space-between, row, center);
         }
-        button{
+        .login{
             padding: 9px 37px;
             background-color: #CA8125;
             @include font-parameter(24px, 500, white, none, none, $roboto-font); 
             border: none;
             border-radius: 15px;
-
+            @media (max-width: 1000px){
+                font-size: 20px;
+            }
+            @media (max-width: 771px){
+                display: none;
+            }
+        }
+        .mobile-menu-trigger{
+            display: none;
+            outline: none;
+            border: none;
+            background: none;
+            cursor: pointer;
+            &:focus{
+                background: none;
+            }
+            @media (max-width: 771px){
+                display: block;
+            }
         }
     
         nav{
             .default-button-first{
-                padding: 10px 57px;
+                // padding: 10px 57px;
                 margin-right: 58px;
+                
             }
-            .default-button-secound{
-                padding: 10px 35px;
-            }
+
             a{
+                
                 border-radius: 15px;
                 padding: 9px 37px;
                 background-color: #CA8125;
                 // width: 254px;
                 @include font-parameter(24px, 500, white, none, none, $roboto-font); 
+                @media (max-width: 1000px){
+                    font-size: 20px;
+                }
+                @media (max-width: 771px){
+                    display: none;
+                }
             }
             
         }
     }
-
 }

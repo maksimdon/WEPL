@@ -328,12 +328,26 @@ body{
                 // margin: 66px auto auto;
                 border-radius: 10px;
                 p{
+                    line-height: 5vh;
+                    margin-left: 120px;
                     @include font-parameter(24px, 400, white, none, none, $roboto-font);
                     text-align: left;
+                    @media (max-width: 1100px){
+                        text-align: center;
+                        margin-top: 20px;
+                        margin-left: 0px;
+                    }
                     
                 }
                 img{
                     // margin-right: 121px;
+                    
+                }
+                @media(max-width: 1100px) {
+                    @include flex-parameter(center, column, center);
+                    img{
+                        max-width: 60%;
+                    }
                     
                 }
             

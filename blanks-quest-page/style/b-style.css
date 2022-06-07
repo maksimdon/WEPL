@@ -575,6 +575,9 @@ h1 {
   body header .logo {
     height: 80%;
   }
+  .nohover{
+    background-color: transparent!important;
+  }
   
   body header .container {
     display: -webkit-box;

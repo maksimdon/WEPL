@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEPL • FORM</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="burger-menu animation-el hidden">
+
+        <a class="default-button-first animation-el hidden" href="../blanks-quest-page/quests.html">Квесты</a>
+        <a class="default-button-secound animation-el hidden" href="#">Создать анкету</a>
+
+
+        <button class="login animation-el hidden">
+            Войти
+        </button>
+    </div>
+    <div class="login-menu hidden">
+        <div class="registration-menu hidden">
+            <div class="registration-wrapper">
+                <h2>Регистрация</h2>
+                <form action="">
+                    <input type="text" placeholder="Логин">
+                    <input type="password" placeholder="Пароль">
+                    <input type="password" placeholder="Повтор пароля">
+                    <button>Зарегистрироваться</button>
+                </form>
+                <button class="switcher-to-log switcher">
+                    Есть аккаунт? Войдите!
+                </button>
+            </div>
+
+
+        </div>
+        <div class="log-menu hidden">
+            <div class="log-wrapper">
+                <h2>Войти</h2>
+                <form action="">
+                    <input type="text" placeholder="Логин">
+                    <input type="password" placeholder="Пароль">
+                    <button>Войти</button>
+                </form>
+                <button class="switcher-to-reg switcher">
+                    Нет аккаунта? Зарегистрируйтесь!
+                </button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="nohover"><img src="../img/logo.svg" alt="logo" class="logo"></a>
+
+            <nav>
+                <a class = "default-button-first" href="../blanks-quest-page/quests.html">Квесты</a>
+                <a class = "default-button-secound" href="#">Создать анкету</a>
+            </nav>
+
+            <button class="login">
+                Войти
+            </button>
+            <button class="mobile-menu-trigger"><img src="../img/menu.svg" alt="menu"></button>
+        </div>
+        
+    </header>
+    <main>
+        <div class="cont">
+                    <h2 class="blank-create">Добавление анкеты игрока</h2>
+                    <div class="form">
+                        <form action="#">
+                            <div class="game-region">
+                                <div class="game">
+                                    <p class="nazva">Игра</p>
+                                    <div class="dropdown dropdown-game" id="dropdown">
+                                        <div class="dropdown__label"></div>
+                                        <ul class="dropdown__menu"></ul>
+                                    </div>
+                                    <!-- <select class="select" name="game" id="">
+                                        <option value="CS:GO">CS:GO</option>
+                                        <option value="Desnity">Desnity</option>
+                                        <option value="Dota 2">Dota 2</option>
+                                        <option value="Valorant">Valorant</option>
+                                        <option value="Overwatch">Overwatch</option>
+                                    </select> -->
+                                </div>
+                                <div class="region">
+                                    <p class="nazva">Регион</p>
+                                    <div class="dropdown" id="dropdown-region">
+                                        <div class="dropdown__label"></div>
+                                        <ul class="dropdown__menu"></ul>
+                                    </div>
+                                    <!-- <select class="select" name="region" id="">
+                                        <option value="Asia">Asia</option>
+                                        <option value="Europe">Europe</option>
+                                        <option value="CIS">CIS</option>
+                                        <option value="America">America</option>
+                                    </select> -->
+                                </div>
+                            </div>
+                            <div class="name-micro">
+                                <div class="name">
+                                    <p class="nazva name-p">Ваше имя?</p>
+                                    <input class="select" type="text">
+                                </div>
+                                <div class="micro">
+                                    <p class="nazva micro-p">Имеется ли у вас микрофон?</p>
+                                    <label class="yesorno">Да
+                                        <input class="micro-input" type="radio" name="micro">
+                                        <span class="radio"></span>
+                                    </label>
+                                    <label class="yesorno">Нет
+                                        <input class="micro-input" type="radio" name="micro">
+                                        <span class="radio"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="age-mates">
+                                <div class="age">
+                                    <p class="nazva">Сколько вам лет?</p>
+                                    <div class="dropdown dropdown-age" id="dropdown-age">
+                                        <div class="dropdown__label"></div>
+                                        <ul class="dropdown__menu"></ul>
+                                    </div>
+                                    <!-- <select class="select" name="age" id="">
+                                        <option value="12-15">12-15 лет</option>
+                                        <option value="16-20">16-20 лет</option>
+                                        <option value="21+">21+ лет</option>
+                                    </select> -->
+                                </div>
+                                <div class="mate-count">
+                                    <p class="nazva micro-p">Какое количество тиммейтов вы ищете?</p>
+                                    <label class="yesorno">Пати
+                                        <input class="micro-input" type="radio" name="micro">
+                                        <span class="radio"></span>
+                                    </label>
+                                    <label class="yesorno">Дуо
+                                        <input class="micro-input" type="radio" name="micro">
+                                        <span class="radio"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="pol-chanel">
+                                <div class="chanel">
+                                    <p class="nazva">Какое средство связи используете?</p>
+                                    <div class="dropdown dropdown-chanel" id="dropdown-chanel">
+                                        <div class="dropdown__label"></div>
+                                        <ul class="dropdown__menu"></ul>
+                                    </div>
+                                    <!-- <select class="select" name="chanel" id="">
+                                        <option value="Discord">Discord</option>
+                                        <option value="TeamSpeak">TeamSpeak</option>
+                                        <option value="Telegram">Telegram</option>
+                                        <option value="other">Другое/встроенный в игру канал</option>
+                                    </select> -->
+                                </div>
+                                <div class="pol">
+                                    <p class="nazva micro-p">Ваш пол</p>
+                                    <label class="yesorno">Мужской
+                                        <input class="micro-input" type="radio" name="micro">
+                                        <span class="radio"></span>
+                                    </label>
+                                    <label class="yesorno">Женский
+                                        <input class="micro-input" type="radio" name="micro">
+                                        <span class="radio"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="aim">
+                                <p class="nazva">Цель игры</p>
+                                <div class="dropdown dropdown-aim" id="dropdown-aim">
+                                    <div class="dropdown__label"></div>
+                                    <ul class="dropdown__menu"></ul>
+                                </div>
+                                <!-- <select class="select" name="aim" id="">
+                                    <option value="fun">Пофаниться</option>
+                                    <option value="up">Трайхард</option>
+                                    <option value="questes">Выполнение квестов</option>
+                                </select> -->
+                            </div>
+                            <div class="skill">
+                                <p class="nazva">Скилл в игре</p>
+                                <div class="dropdown dropdown-skill" id="dropdown-skill">
+                                    <div class="dropdown__label"></div>
+                                    <ul class="dropdown__menu"></ul>
+                                </div>
+                                <!-- <select class="select" name="aim" id="">
+                                    <option value="low">Новичек</option>
+                                    <option value="mid">Средний</option>
+                                    <option value="high">Высокий</option>
+                                </select> -->
+                            </div>
+                        </form>
+                    </div>
+            <a class="blank-a" href="../blanks-quest-page/blanks-for-game.html">
+                <div class="create-button">
+                    <p class="create">Создать анкету</p>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <!-- <script src="script.js"></script> -->
+    <script src="../script.js"></script>
+</body>
+
+</html>

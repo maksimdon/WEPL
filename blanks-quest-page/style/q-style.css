@@ -610,6 +610,9 @@ h1 {
   body header nav .default-button-first {
     margin-right: 58px;
   }
+  .nohover{
+    background-color: transparent!important;
+  }
   
   body header nav a {
     border-radius: 15px;

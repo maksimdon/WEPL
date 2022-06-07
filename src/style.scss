@@ -1,4 +1,4 @@
-<<<<<<< HEAD:src/style.scss
+
 $roboto-font: 'Roboto', sans-serif;
 
 
@@ -306,7 +306,7 @@ body{
     }
     main{
         padding: 46px 0 196px;
-        
+        overflow: hidden;
         background-color: #000C37;
         .proj-info{
             img{
@@ -314,6 +314,9 @@ body{
             }
             h1{
                 @include font-parameter(64px, 500, white, none, none, $roboto-font);
+                @media (max-width: 767px){
+                    @include font-parameter(50px, 500, white, none, none, $roboto-font);
+                }
             }
             text-align: center;
             
@@ -323,7 +326,7 @@ body{
                 box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
                 text-align: center;
                 @include flex-parameter(center, row, center);
-                padding: 32px 0 ;
+                padding: 32px 10px;
                 // margin-top: 66px;
                 max-width: 1294px;
                 // margin: 66px auto auto;
@@ -342,6 +345,7 @@ body{
                 }
                 img{
                     // margin-right: 121px;
+                    max-width: 40%;
                     
                 }
                 @media(max-width: 1100px) {
@@ -402,7 +406,7 @@ body{
         background-color: #001251;
     }
 }
-=======
+
 $roboto-font: 'Roboto', sans-serif;
 
 
@@ -436,6 +440,7 @@ $roboto-font: 'Roboto', sans-serif;
 body{
     .hidden{
         width: 0; height: 0; visibility: hidden; display: none;
+        
     }
     .burger-menu{
         margin-top: 75px;
@@ -448,7 +453,7 @@ body{
         -moz-transition:max-height 0.4s linear;
         transition:max-height 0.4s linear;
         max-height: 0px;
-
+        z-index: 10;
         .default-button-secound{
             margin: 20px 0;
         }
@@ -692,7 +697,9 @@ body{
                 // padding: 10px 35px;
             }
             a{
-                
+                &:hover{
+                    color: white!important;
+                }
                 border-radius: 15px;
                 padding: 9px 37px;
                 background-color: #CA8125;
@@ -718,6 +725,9 @@ body{
             }
             h1{
                 @include font-parameter(64px, 500, white, none, none, $roboto-font);
+                @media (max-width: 767px){
+                    @include font-parameter(50px, 500, white, none, none, $roboto-font);
+                }
             }
             text-align: center;
             
@@ -806,4 +816,4 @@ body{
         background-color: #001251;
     }
 }
->>>>>>> e0fc9edf5d95d43482fe374f020355336746247c:game-page/src/style.scss
+

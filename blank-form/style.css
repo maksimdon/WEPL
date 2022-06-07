@@ -1,0 +1,406 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.cont{
+    width: 85%;
+    margin: auto;
+    font-family: 'Roboto';
+}
+main{
+    background-color: #000c37;
+    padding-top: 76px;
+    padding-bottom: 113px;
+}
+.blank-create{
+    color: white;
+    margin-bottom: 82px;
+    font-size: 32px;
+}
+.nazva{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+.select{
+    width: 420px;
+    height: 75px;
+    background: #001251;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 23px 35px 23px 35px;
+}
+select{
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+}
+.game{
+    display: inline-block;
+}
+.region{
+    display: inline-block;
+    margin-left: 244px;
+}
+.name{
+    display: inline-block;
+}
+.name-p{
+    margin-top: 41px;
+}
+.micro-input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.radio{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #001251;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 110px;
+}
+.micro-input:checked + .radio{
+    border: #001251 solid 10px;
+    background-color: white;
+}
+.yesorno{
+    color: white;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.micro{
+    display: inline-block;
+    margin-left: 244px;
+}
+.micro-p{
+    margin-bottom: 36px;
+}
+.age{
+    margin-top: 38px;
+    display: inline-block;
+}
+.mate-count{
+    display: inline-block;
+    margin-left: 244px;
+}
+.pol{
+    margin-top: 51px;
+    display: inline-block;
+    margin-left: 244px;
+}
+.chanel{
+    margin-top: 51px;
+    display: inline-block;
+}
+.aim{
+    margin-top: 51px;
+}
+.skill{
+    margin-top: 51px;
+}
+.create{
+    color: white;
+    font-size: 24px;
+}
+.create-button{
+    padding: 23px 120px 23px 120px;
+    background-color: #CA8125;
+    max-width: 416px;
+    margin-top: 100px;
+    border-radius: 15px;
+}
+.blank-a{
+    text-decoration: none;
+}
+footer{
+    background-color: #001251;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.game-region{
+  width: 100%;
+}
+.game{
+  width: 40%;
+}
+.region{
+  width: 40%;
+}
+.name-micro{
+  width: 100%;
+}
+.name{
+  width: 40%;
+}
+.micro{
+  width: 40%;
+}
+.age-mates{
+  width: 100%;
+}
+.age{
+  width: 40%;
+}
+.mate-count{
+  width: 40%;
+}
+.pol-chanel{
+  width: 100%;
+}
+.pol{
+  width: 40%;
+}
+.chanel{
+  width: 40%;
+}
+.container {
+    max-width: 85%;
+    margin: auto;
+  }
+  
+
+.select{
+    width: 420px;
+    height: 75px;
+    background: #001251;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 23px 25px 23px;
+    
+}
+*{margin: 0px;padding: 0px;box-sizing: border-box;}
+
+
+.dropdown.open .dropdown__menu{
+    display: block;
+}
+
+.dropdown{
+    position: relative;
+    width: 416px;
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center; */
+
+}
+
+.dropdown__label{
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    max-width: 100%;
+    cursor: pointer;
+    background-color: #001251;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 23px 35px;
+    white-space: nowrap;
+    border-radius: 25px;
+}
+
+.dropdown__menu{
+    list-style: none;
+    display: none;
+    border-radius: 0px 0px 25px 25px;
+    border: 1px solid black;
+    position: absolute;
+    width: 91%;
+    top: 75px;
+    left: 17px;
+    /* padding: 10px 0; */
+    background-color: #001251;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    line-height: 28px;
+    padding: 23px 35px;
+    /* margin-top: -15px; */
+    
+}
+
+.dropdown__menu li{
+    padding: 5px 23px;
+}
+
+.dropdown__menu li:hover{
+    background: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+.dropdown-game{
+  z-index: 6;
+}
+.dropdown-age{
+  z-index: 5;
+}
+.dropdown-chanel{
+  z-index: 4;
+}
+.dropdown-aim{
+  z-index: 3;
+}
+.dropdown-skill{
+  z-index: 2;
+}
+@media (max-width: 1460px) {
+  .region{
+    margin-left: 140px;
+  }
+  .micro{
+    margin-left: 140px;
+  }
+  .mate-count{
+    margin-left: 140px;
+  }
+  .pol{
+    margin-left: 140px;
+  }
+}
+@media(max-width: 1390px){
+  .yesorno{
+    margin-right: 0;
+    font-size: 10px;
+}
+  .nazva{
+    font-size: 16px;
+  }
+  .select{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .dropdown__label{
+    width: 200px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+  }
+  .dropdown__menu{
+    top: 53px;
+    left: 17px;
+    width: 39.5%;
+    padding: 10px 15px 10px 15px;
+  }
+}
+@media(max-width: 1110px){
+  .radio{
+    margin-right: 50px;
+  }
+}
+@media(max-width: 970px){
+  .dropdown{
+    width: 300px;
+  }
+}
+@media(max-width: 900px){
+  .logo{
+    display: none;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .default-button-first{
+    max-width: 120px;
+    font-size: 20px;
+    margin-top: 8px;
+  }
+  .default-button-secound{
+    max-width: 160px;
+    font-size: 20px;
+    margin-top: 8px;
+  }
+  .login{
+    max-width: 100px;
+    font-size: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media(max-width: 860px){
+  .region{
+    margin-left: 90px;
+  }
+  .micro{
+    margin-left: 90px;
+  }
+  .mate-count{
+    margin-left: 90px;
+  }
+  .pol{
+    margin-left: 90px;
+  }
+  .create-button{
+    padding: 12px 60px 12px 50px;
+    background-color: #CA8125;
+    max-width: 260px;
+    margin-top: 50px;
+    border-radius: 15px;
+  }
+  .create{
+    font-size: 20px;
+  }
+  main{
+    padding-bottom: 60px;
+  }
+}
+@media(max-width:760px){
+  .game{
+    display: block;
+    width: 100%;
+  }
+  .region{
+    display: block;
+    margin-left: 0;
+    margin-top: 33px;
+    width: 100%;
+  }
+  .name{
+    display: block;
+    width: 100%;
+  }
+  .micro{
+    display: block;
+    margin-left: 0;
+    margin-top: 33px;
+    width: 100%;
+  }
+  .age{
+    display: block;
+    width: 100%;
+  }
+  .mate-count{
+    display: block;
+    margin-left: 0;
+    margin-top: 33px;
+    width: 100%;
+  }
+  .chanel{
+    display: block;
+    width: 100%;
+  }
+  .pol{
+    display: block;
+    margin-left: 0;
+    margin-top: 33px;
+    width: 100%;
+  }
+  .blank-create{
+    font-size: 24px;
+    margin-bottom: 28px;
+    margin-bottom: 33px;
+  }
+}

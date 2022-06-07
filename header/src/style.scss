@@ -1,0 +1,304 @@
+
+$roboto-font: 'Roboto', sans-serif;
+
+
+@mixin flex-parameter($justify-content, $flex-direction, $align-items){
+    display: flex;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+}
+@mixin font-parameter($font-size, $font-weight, $color, $text-decoration, $text-transform, $font-family){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+    text-decoration: $text-decoration;
+    text-transform: $text-transform;
+    font-family: $font-family;
+}
+
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+.container{
+    max-width: 85%;
+    margin: auto;
+}
+
+
+body{
+    .hidden{
+        width: 0; height: 0; visibility: hidden; display: none;
+    }
+    .burger-menu{
+        margin-top: 75px;
+        background-color: #001251;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        border-top: none!important;
+        -webkit-transition:max-height 0.4s linear;
+        -moz-transition:max-height 0.4s linear;
+        transition:max-height 0.4s linear;
+        max-height: 0px;
+
+        .default-button-secound{
+            margin: 20px 0;
+        }
+        @include flex-parameter(center, column, center);
+        right: 0;
+        
+        a{
+            -webkit-transition:max-height 0.4s linear;
+            -moz-transition:max-height 0.4s linear;
+            transition:max-height 0.4s linear;
+            max-height: 0px;
+            width: 300px;
+            text-align: center;
+            border-radius: 15px;
+            padding: 9px 0;
+            // background-color: #CA8125;
+            background-color: transparent;
+            color: transparent;
+                // width: 254px;
+            @include font-parameter(24px, 500, transparent, none, none, $roboto-font); 
+            @media (max-width: 1000px){
+                font-size: 20px;
+            }
+            
+        }
+        .login{
+            -webkit-transition:max-height 0.4s linear;
+            -moz-transition:max-height 0.4s linear;
+            transition:max-height 0.4s linear;
+            max-height: 0px;
+            color: transparent;
+            padding: 9px 37px;
+            // background-color: #CA8125;
+            background-color: transparent;
+            @include font-parameter(24px, 500, transparent, none, none, $roboto-font); 
+            border: none;
+            border-radius: 15px;
+            width: 300px;
+            text-align: center;
+            @media (max-width: 1000px){
+                font-size: 20px;
+            }
+            
+        }
+    }
+    .login-menu{
+        width: 100%!important;
+        @include flex-parameter(center, center, center);
+        height: 100%!important;
+        background-color: rgba(0, 0, 0, 0.709);
+        position: fixed;
+        z-index: 999;
+        
+        
+        .registration-menu{
+            .registration-wrapper{
+                width: 80%;
+                margin: auto;
+                @include flex-parameter(auto, column, center);
+                h2{
+                    margin-bottom: 126px;
+                    @include font-parameter(64px, 500, white, none, none, $roboto-font);
+                }
+                .switcher{
+                    @include font-parameter(16px, 400, white, none, none, $roboto-font);
+                    background: none;
+                    border: none;
+                    opacity: 40%;
+                }
+                form{
+                    width: 100%;
+                    text-align: left;
+                    @include flex-parameter(space-between, column, center);
+                    input{
+                        border-radius: 25px;
+                        padding: 23px;
+                        width: 100%;
+                        border: none;
+                        background-color: #001251;
+                        margin-bottom: 25px;
+                        outline: none;
+                        @include font-parameter(24px, 500, #FFFFFF, none, none, $roboto-font);
+                        &::placeholder{
+                            color:#FFFFFF;
+                            opacity: 60%;
+                            @include font-parameter(24px, 500, #FFFFFF, none, none, $roboto-font);
+                        }
+                        &:focus{
+                            &::placeholder{
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    button{
+                        width: 100%;
+                        margin-bottom: 10px;
+                        background-color: #CA8125;
+                        padding: 20px 20px;
+                        border: none !important;
+                        transition: 0.2s;
+                        border-radius: 25px;
+                        // opacity: 80%;
+                        &:hover{
+                            background-color: #86551a;
+                        }
+                        @include font-parameter(24px, 500, #FFFFFF, none, none, $roboto-font);
+                        @media (max-width: 1000px){
+                            font-size: auto;
+                        }
+
+                    }
+                }
+            }
+            width: 600px;
+            border-radius: 25px;
+            background-color: white;
+            // height: 567px;
+            background-color: #000C37;
+            padding: 70px 0;
+            
+
+        }
+        .log-menu{
+            .log-wrapper{
+                width: 80%;
+                margin: auto;
+                @include flex-parameter(auto, column, center);
+                h2{
+                    margin-bottom: 126px;
+                    @include font-parameter(64px, 500, white, none, none, $roboto-font);
+                }
+                .switcher{
+                    @include font-parameter(16px, 400, white, none, none, $roboto-font);
+                    background: none;
+                    border: none;
+                    opacity: 40%;
+                }
+                form{
+                    width: 100%;
+                    text-align: left;
+                    @include flex-parameter(space-between, column, center);
+                    input{
+                        border-radius: 25px;
+                        padding: 23px;
+                        width: 100%;
+                        border: none;
+                        background-color: #001251;
+                        margin-bottom: 25px;
+                        outline: none;
+                        @include font-parameter(24px, 500, #FFFFFF, none, none, $roboto-font);
+                        &::placeholder{
+                            color: #ffffff;
+                            opacity: 60%;
+                            @include font-parameter(24px, 500, #FFFFFF, none, none, $roboto-font);
+                        }
+                        &:focus{
+                            &::placeholder{
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    button{
+                        width: 100%;
+                        margin-bottom: 10px;
+                        background-color: #CA8125;
+                        padding: 20px 20px;
+                        border: none !important;
+                        border-radius: 25px;
+                        // opacity: 80%;
+                        transition: 0.2s;
+                        &:hover{
+                            background-color: #86551a;
+                        }
+                        @include font-parameter(24px, 500, #FFFFFF, none, none, $roboto-font);
+
+                    }
+                }
+            }
+            width: 600px;
+            border-radius: 25px;
+            background-color: white;
+            // height: 567px;
+            background-color: #000C37;
+            padding: 70px 0;
+            
+
+        }
+    }
+    header{
+        padding: 5px 0 25px;
+        a, button{
+            &:hover{
+                background-color: #86551a;
+                transition: 0.2s;
+            }
+        }
+        // @include flex-parameter(space-between, row, center);
+        .logo{
+            height: 80%;
+            
+        }
+        height: 80px;
+        background-color: #001251;
+        .container{
+            @include flex-parameter(space-between, row, center);
+        }
+        .login{
+            padding: 9px 37px;
+            background-color: #CA8125;
+            @include font-parameter(24px, 500, white, none, none, $roboto-font); 
+            border: none;
+            border-radius: 15px;
+            @media (max-width: 1000px){
+                font-size: 20px;
+            }
+            @media (max-width: 771px){
+                display: none;
+            }
+        }
+        .mobile-menu-trigger{
+            display: none;
+            outline: none;
+            border: none;
+            background: none;
+            cursor: pointer;
+            &:focus{
+                background: none;
+            }
+            @media (max-width: 771px){
+                display: block;
+            }
+        }
+    
+        nav{
+            .default-button-first{
+                // padding: 10px 57px;
+                margin-right: 58px;
+                
+            }
+
+            a{
+                
+                border-radius: 15px;
+                padding: 9px 37px;
+                background-color: #CA8125;
+                // width: 254px;
+                @include font-parameter(24px, 500, white, none, none, $roboto-font); 
+                @media (max-width: 1000px){
+                    font-size: 20px;
+                }
+                @media (max-width: 771px){
+                    display: none;
+                }
+            }
+            
+        }
+    }
+}
